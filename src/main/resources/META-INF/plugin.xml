@@ -1,11 +1,11 @@
 <idea-plugin>
     <id>org.example.idea-plugin-research</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>MyFirstDemo</name>
+    <vendor email="yinger521999@gmail.com" url="https://github.com/boatrainlsz">boatrainlsz</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    boatrainlszboatrainlszboatrainlszboatrainlszboatrainlsz.<br>
+    <em>boatrainlsz</em>
     ]]></description>
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
@@ -18,5 +18,8 @@
 
     <actions>
         <!-- Add your actions here -->
+        <action id="MyAction" class="MyAction" text="MyAction" description="MyAction">
+            <add-to-group group-id="FileMenu" anchor="first"/>
+        </action>
     </actions>
 </idea-plugin>
