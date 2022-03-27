@@ -14,6 +14,16 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <!-- 配置 File -> Settings -> Tools -->
+        <projectConfigurable groupId="tools" displayName="My Test Config" id="test.id"
+                             instance="factory.SettingFactory">
+
+        </projectConfigurable>
+        <!-- 窗体 (IDEA 界面右侧) -->
+        <toolWindow factoryClass="factory.ReadFactory" id="Read-Book"
+                    secondary="false" anchor="right" icon="/icons/logo.png">
+
+        </toolWindow>
     </extensions>
 
     <actions>
