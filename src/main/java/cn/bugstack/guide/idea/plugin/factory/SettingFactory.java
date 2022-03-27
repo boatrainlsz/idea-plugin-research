@@ -1,13 +1,19 @@
-package factory;
+package cn.bugstack.guide.idea.plugin.factory;
 
+import cn.bugstack.guide.idea.plugin.Config;
+import cn.bugstack.guide.idea.plugin.ui.SettingUI;
+import com.intellij.notification.Notification;
+import com.intellij.notification.NotificationDisplayType;
+import com.intellij.notification.NotificationGroup;
+import com.intellij.notification.Notifications;
 import com.intellij.openapi.options.ConfigurationException;
 import com.intellij.openapi.options.SearchableConfigurable;
+import com.intellij.openapi.ui.MessageType;
 import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import ui.SettingUI;
 
-import javax.swing.JComponent;
+import javax.swing.*;
 import java.io.File;
 import java.io.RandomAccessFile;
 import java.nio.charset.StandardCharsets;
@@ -54,7 +60,7 @@ public class SettingFactory implements SearchableConfigurable {
             String str = new String(copy, StandardCharsets.UTF_8);
 
             // 设置内容
-            ReadFactory.readUI.getTextContent().setText(str);
+            Config.readUI.getTextContent().setText(str);
 
         } catch (Exception ignore) {
         }

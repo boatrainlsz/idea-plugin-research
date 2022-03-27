@@ -1,8 +1,6 @@
-package ui;
+package cn.bugstack.guide.idea.plugin.ui;
 
-import javax.swing.JComponent;
-import javax.swing.JPanel;
-import javax.swing.JTextPane;
+import javax.swing.*;
 
 public class ReadUI {
 

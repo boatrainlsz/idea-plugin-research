@@ -1,14 +1,10 @@
-package ui;
+package cn.bugstack.guide.idea.plugin.ui;
 
-import javax.swing.JButton;
-import javax.swing.JComponent;
-import javax.swing.JFileChooser;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.*;
 import java.io.File;
 
 public class SettingUI {
+
     private JPanel mainPanel;
     private JPanel settingPanel;
     private JLabel urlLabel;
